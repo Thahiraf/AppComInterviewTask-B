@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct AppComInterviewTaskApp: App {
+   // @StateObject private var vm = HomeViewModel()
     var body: some Scene {
+       
         WindowGroup {
-            ContentView()
+            NavigationView{
+            Home()
+            }
+           // .environmentObject(vm)
         }
     }
 }
