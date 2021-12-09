@@ -10,7 +10,11 @@ import SwiftUI
 
 class NetworkingManager: ObservableObject{
     
-    @Published var category = [MovieCategory]()
+   @Published var category = [MovieCategory]()
+    
+    init(){
+        fetchData()
+    }
     
     func fetchData(){
         if let url = URL(string: "https://appcomsolution.com/ios_test/api/get_all_categories"){

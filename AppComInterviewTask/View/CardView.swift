@@ -8,27 +8,21 @@
 import SwiftUI
 
 struct CardView: View {
+    @ObservedObject var networkmanager = NetworkingManager()
     let movieCategories: MovieCategory
     var body: some View {
         VStack(alignment: .leading){
-            Image(movieCategories.categoryImage)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .padding(.top,30)
-                .padding(.bottom)
-                .padding(.horizontal, 10)
-                .cornerRadius(10)
             
+            URLImage(urlString: movieCategories.categoryImage)
             Text(movieCategories.categoryName)
                 .fontWeight(.bold)
-                .foregroundColor(.black)
+                .foregroundColor(Color("yellow"))
                
         }
-        .padding()
+        .padding(6)
         //giving hero effect for colors also
-        .background(Color.gray
-        )
-        .cornerRadius(15)
+        .background(Color.black)
+        .cornerRadius(10)
        
     }
 }

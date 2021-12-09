@@ -10,37 +10,37 @@ import SwiftUI
 struct Home: View {
   //  @EnvironmentObject private var vm : HomeViewModel
     @ObservedObject var networkmanager = NetworkingManager()
-    
+    @State var showcategoryid: Bool = false
+    @ObservedObject var categorykmanager = MovieDetailService()
     var body: some View {
-//        NavigationView{
-//
-//            List(networkmanager.category){ cate in
-//                Text(cate.categoryName)
-//            }
-//            .background(Color.red)
-//
-//        }
-//        .onAppear{
-//            self.networkmanager.fetchData()
-//        }
-//        //angela
-      
+        ZStack{
+            Color.red.edgesIgnoringSafeArea([.all])
+
         NavigationView{
             ScrollView{
-        LazyVGrid(columns: Array(repeating: GridItem(.flexible(),spacing: 20), count: 2), spacing: 25){
+        LazyVGrid(columns: Array(repeating: GridItem(.adaptive(minimum: 90),spacing:5), count: 2), spacing: 10){
             ForEach(networkmanager.category){ item in
                 //CardView
                CardView(movieCategories: item)
+                    .onTapGesture {
+                        if showcategoryid{
+                            DetailListView(idchange: item.id)
+                        }
+                    }
 
             }
         }
         .padding()
         }
-        .onAppear{
-            self.networkmanager.fetchData()
-        }
-        
+//        .onAppear{
+//            self.networkmanager.fetchData()
+//        }
+        .navigationBarHidden(true)
+        .background(Color.black)
     }
+       
+    }
+       
     }
 }
 
