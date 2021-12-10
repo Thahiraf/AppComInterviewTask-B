@@ -14,7 +14,8 @@ struct AppComInterviewTaskApp: App {
        
         WindowGroup {
             NavigationView{
-            Home()
+                UploadView()
+            //Home()
             }
            // .environmentObject(vm)
         }

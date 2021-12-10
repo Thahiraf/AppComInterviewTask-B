@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F00CE3FE27632DBB004EBF3A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00CE3FD27632DBB004EBF3A /* ImagePicker.swift */; };
 		F0841909275F78450099B4AE /* AppComInterviewTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0841908275F78450099B4AE /* AppComInterviewTaskApp.swift */; };
 		F084190D275F78490099B4AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F084190C275F78490099B4AE /* Assets.xcassets */; };
 		F0841910275F78490099B4AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F084190F275F78490099B4AE /* Preview Assets.xcassets */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F00CE3FD27632DBB004EBF3A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F00CE3FF27633A68004EBF3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F0841905275F78450099B4AE /* AppComInterviewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppComInterviewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0841908275F78450099B4AE /* AppComInterviewTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComInterviewTaskApp.swift; sourceTree = "<group>"; };
 		F084190C275F78490099B4AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 		F0841907275F78450099B4AE /* AppComInterviewTask */ = {
 			isa = PBXGroup;
 			children = (
+				F00CE3FF27633A68004EBF3A /* Info.plist */,
 				F0841908275F78450099B4AE /* AppComInterviewTaskApp.swift */,
 				F0841921275F96E60099B4AE /* Utilities */,
 				F0A537712761CA45007F7208 /* Service */,
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F0A537692761064D007F7208 /* URLImage.swift */,
+				F00CE3FD27632DBB004EBF3A /* ImagePicker.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 				F0841920275F96CD0099B4AE /* NetworkingManager.swift in Sources */,
 				F084191B275F79280099B4AE /* Movies.swift in Sources */,
 				F0A5376C27611CDD007F7208 /* ListRowView.swift in Sources */,
+				F00CE3FE27632DBB004EBF3A /* ImagePicker.swift in Sources */,
 				F0A537732761CA73007F7208 /* MovielDetailService.swift in Sources */,
 				F0A537702761C425007F7208 /* CategoryList.swift in Sources */,
 			);
@@ -339,6 +345,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AppComInterviewTask/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppComInterviewTask/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Application need to access camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -367,6 +375,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AppComInterviewTask/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppComInterviewTask/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Application need to access camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
