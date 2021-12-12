@@ -11,17 +11,39 @@ struct DetailListView: View {
     @ObservedObject var categorykmanager = MovieDetailService()
     var idchange: Int
     var body: some View {
-        ScrollView{
-        List{
-            ForEach(categorykmanager.categoryList){ lis in
-                ListRowView(detailCategories: lis)
-    
-                    //categorykmanager.fetchListData(categoryId: lis)
+        ZStack {
+            Color.black.edgesIgnoringSafeArea([.all])
+            ScrollView{
+            VStack{
+            TabView{
+                Text("sc1")
+                    .tabItem{
+                        Text("TopRated")
+                    }
+                Text("sc1")
+                    .tabItem{
+                        Text("Low Rated")
+                    }
+               
             }
+            .accentColor(.white)
+            .padding()
+                
            
-        }
-        }
+            List{
+                ForEach(categorykmanager.categoryList){ lis in
+                    ListRowView(detailCategories: lis)
         
+                        //categorykmanager.fetchListData(categoryId: lis)
+                }
+               
+            }
+                
+            }
+               
+            }
+        }
+      
     }
 }
 

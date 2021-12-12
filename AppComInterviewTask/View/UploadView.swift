@@ -130,14 +130,9 @@ struct UploadView: View {
                                 .cornerRadius(20)
                         }
                         .padding()
-
                     }
-                    
-                        
                 }
                 .padding(.horizontal)
-               
-                    
                 }
           
         }.sheet(isPresented: $openCameraRoll){

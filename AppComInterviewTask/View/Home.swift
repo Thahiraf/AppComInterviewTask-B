@@ -24,7 +24,10 @@ struct Home: View {
                CardView(movieCategories: item)
                     .onTapGesture {
                         if showcategoryid{
-                            DetailListView(idchange: item.id)
+                            NavigationLink("") {
+                                DetailListView(idchange: item.id)
+                            }
+                            
                         }
                     }
 

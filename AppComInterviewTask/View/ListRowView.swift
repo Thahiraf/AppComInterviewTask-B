@@ -11,6 +11,7 @@ struct ListRowView: View {
    // @ObservedObject var categorykmanager = MovieDetailService()
     let detailCategories: MovieCategoryList
     var body: some View {
+        
         VStack{
             HStack(alignment: .top){
                 Image(systemName: "person")

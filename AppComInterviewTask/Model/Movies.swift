@@ -21,26 +21,6 @@ import SwiftUI
              "category_name": "Action",
              "category_image": "https://appcomsolution.com/ios_test/public/categoryImages/actions.jpg"
          },
-         {
-             "category_id": 3,
-             "category_name": "Thriller",
-             "category_image": "https://appcomsolution.com/ios_test/public/categoryImages/thriller.jpg"
-         },
-         {
-             "category_id": 4,
-             "category_name": "Comedy",
-             "category_image": "https://appcomsolution.com/ios_test/public/categoryImages/comedy.jpg"
-         },
-         {
-             "category_id": 5,
-             "category_name": "Horror",
-             "category_image": "https://appcomsolution.com/ios_test/public/categoryImages/horror.jpg"
-         },
-         {
-             "category_id": 6,
-             "category_name": "Romance",
-             "category_image": "https://appcomsolution.com/ios_test/public/categoryImages/romance.jpg"
-         }
      ]
  }
 
@@ -54,9 +34,6 @@ struct MovieCategory:Identifiable, Codable{
         let id: Int
         let categoryName: String
         let categoryImage: String
-    
-    
-    
     enum CodingKeys: String, CodingKey{
         case id = "category_id"
         case categoryName = "category_name"
